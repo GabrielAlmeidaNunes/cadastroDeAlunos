@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+ 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cabecalho{
+  margin: 0;
+  background-color: aquamarine;
+  padding: 1em;
+}
+
+.caixa{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#tabela {
+ border-collapse: collapse;
+}
+
+#tabela th, td{
+  border: 1px solid black;
+  padding: 0.5em;
+  text-align: center;
+ }
+
+.formulario #nome{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius: 5px;
+}
+
+.formulario input{
+  width: 20%;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius: 5px;
+}
+
+#botaoCadastra{
+  width: 20%;
+  height: 25%;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius:  10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+
+#botaoCadastra:hover{
+  background-color: rgb(116, 207, 116);
+  border-color:  white;
+}
+
+
+/* CLASSLIST===== */
+.input-vazio{
+  background-color: red;
+  color: black;
+}
+
+.aluno-cadastrado{
+  background-color: rgb(228, 82, 82);
+  color: white;
+}
+
+
+
+
+/* RESPONSIVO========== */
+
+@media screen and (max-width:1700px){
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .formulario input{
+    width: 60%;
+  
+  }
+  
+  #botaoCadastra{
+    width: 25%;
+    height: 3em;
+    margin-bottom: 1em;
+  
+  }
+  
+}
+
+@media screen and (max-width:650px){
+  
+  .caixa{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  #tabela {
+    width: 60%;
+   }
+
+   .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+}
+
+@media screen and (max-width:375px){
+
+
+  #tabela th, td {
+   font-size: 13px;
+   }
+
+  .formulario input{
+     padding: 0.3em;
+     width: 80%;
+  
+  }
+
+  .formulario #nome{
+    padding: 0.5em;
+  
+  }
+
+}
+
+@media screen and (max-width:310px){
+
+  #tabela th, td {
+   font-size: 11px;
+   }
+
+   #botaoCadastra{
+    width: 35%;
+    height: 2.5em;
+    margin-bottom: 1em;
+  
+  }
+
+}
+
+
+
+
