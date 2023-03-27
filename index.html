@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastros</title>
+
+
+  <link rel="stylesheet" href="./sytele.css">
+
+  <script  src="./index.js" defer></script>
+
+  <script  src="./removeAluno.js" defer></script> 
+
+  <script src="./pesquisarAluno.js" defer></script>
+
+  <script src="./adicionaArquivoAjax.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class=" caixa">
+      <h1>Escola Estadual de Betim</h1>
+    </div>
+    
+  </header>
+
+
+  <div class=" caixa caixa-input">
+    <label for="pesquisa" class="pesquisa">Filtrar:</label>
+    <input type="text" name="pesquisar" id="pesquisa" placeholder="Digite o aluno a ser pesquisado">
+  </div>
+  
+  <div class=" caixa">
+    <h2>Cadastro de Alunos</h2>
+    <hr>
+  </div>
+
+ 
+  <table id="tabela" class="tabela caixa">
+
+
+    <thead>
+
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Turma</th>
+        <th>Turno</th>
+        <th>Telefone</th> 
+        <th>Excluir</th>
+      </tr>
+
+    </thead>
+
+
+    <tbody class="tabela-alunos">
+    
+ 
+    </tbody>
+    
+  </table>
+
+  <div class="caixa">
+    <h2 >Adicionar Novo Aluno</h2>
+    <hr>
+
+  </div>
+
+  <button class="btn-lista" type="button">Adicionar Aluno da Lista</button>
+  
+
+
+  <form action="" class="caixa formulario">
+
+      <label for="nome">Nome:</label>
+      <input class="input" type="text" name="nome" id="nome" placeholder="digite o nome do aluno" required> 
+
+      <label for="idade">Idade:</label>
+      <input class="input" type="number" name="idade" id="idade" placeholder="selecione a idade do aluno" required> 
+
+      <label for="turma">Turma:</label>
+      <input class="input" type="text" name="turma" id="turma" placeholder="insira a turma do aluno" required>
+
+      <label for="turno">Turno:</label>
+      <input class="input" type="text" name="turno" id="turno" placeholder="insira o turno do aluno" required> 
+
+      <label for="tel">Telefone:</label>
+      <input class="input" type="tel" name="tel" id="tel" placeholder="insira o telefone do aluno" required>
+
+
+      <button type="submit" id="botaoCadastra">Cadastrar</button>
+
+    
+  </form>
+  
+</body>
+</html>

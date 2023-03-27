@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+ 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+  
+}
+
+.cabecalho{
+  margin: 0;
+  background-color: aquamarine;
+  padding: 1em;
+}
+
+.caixa{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#tabela {
+ border-collapse: collapse;
+ 
+ 
+ 
+}
+
+#tabela th, td{
+  border: 1px solid black;
+  padding: 0.4em;
+  text-align: center;
+ 
+ }
+
+
+
+.formulario #nome{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius: 5px;
+}
+
+.formulario input{
+  width: 20%;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius: 5px;
+}
+
+#botaoCadastra{
+  width: 20%;
+  height: 25%;
+  border: 1px solid rgb(168, 166, 166);
+  border-radius:  10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+
+#botaoCadastra:hover{
+  background-color: rgb(116, 207, 116);
+  border-color:  white;
+}
+
+
+
+
+/* CLASSLIST===== */
+.input-vazio{
+  border-color: red !important;
+  color: black;
+}
+
+.aluno-cadastrado{
+  
+  border-color: rgb(228, 82, 82) !important;
+  color:black;
+}
+
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.caixa-input{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.pesquisa{
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+#pesquisa{
+  margin-bottom: 0;
+  width: 50%;
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
+
+.invisivel{
+  display: none;
+}
+
+.btn-lista{
+  margin-left: 20%;
+  width: 15%;
+  border:1px solid  rgb(168, 166, 166);
+  border-radius: 1.5em;
+  padding: 0.7em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-lista:hover{
+  background-color: rgb(162, 221, 162);
+  border: none;
+}
+
+
+
+
+/* RESPONSIVO========== */
+
+@media screen and (max-width:1700px){
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .formulario input{
+    width: 60%;
+  
+  }
+  
+  #botaoCadastra{
+    width: 25%;
+    height: 3em;
+    margin-bottom: 1em;
+  
+  }
+  .caixa-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5em;
+  }
+  
+  
+  
+}
+
+
+@media screen and (max-width:716px){
+
+   #tabela th, td {
+    font-size: 90%; 
+   }
+
+   .btn-lista{
+    width: 20%;
+    
+  }
+
+ 
+
+}
+
+
+
+
+
+@media screen and (max-width:650px){
+  
+  .caixa{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  #tabela {
+    width: 80%;
+   }
+
+   #tabela th, td {
+    font-size: 82%; 
+   }
+
+   .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .btn-lista{
+    margin-left: 2%;
+    width: 25%;
+    
+  }
+
+}
+
+@media screen and (max-width:405px){
+
+  #tabela {
+    width: 50%;
+   }
+  #tabela th, td {
+    font-size: 0.8rem; 
+   }
+
+  .formulario input{
+     padding: 0.3em;
+     width: 80%;
+  
+  }
+
+  .formulario #nome{
+    padding: 0.5em;
+  
+  }
+  #pesquisa{
+    width: 65%;
+    font-size: 0.7em;
+  }
+
+  .btn-lista{
+    margin-left: 2%;
+    width: 38%;
+    padding: 0.5em;
+    
+  }
+
+}
+
+@media screen and (max-width:331px){
+
+  
+
+   #botaoCadastra{
+    width: 35%;
+    height: 2.5em;
+    margin-bottom: 1em;
+  
+  }
+  #pesquisa{
+    width:90%;
+    font-size: 0.6em;
+    padding: 1.2em;
+    border-radius: 1em;
+  }
+
+  .pesquisa{
+    font-size: 1.6rem;
+  }
+
+
+  #tabela th, td{
+   
+    padding: 0.4em;
+    font-size: 0.69rem;
+    
+   
+   }
+
+}
+
+
+
+
+
+
